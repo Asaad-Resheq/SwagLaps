@@ -43,10 +43,10 @@ public class FirstTestNG {
 		
 		double[] itemsPrices= {};
 		
-		for(int i=0;i<listOfPrices.size();i++) {
+		for(int i=1;i<listOfPrices.size();i++) {
 			String newPrice=listOfPrices.get(i).getText().replace("$","");
 			itemsPrices[i]= Double.valueOf(newPrice);
-			System.out.println(itemsPrices[i]);
+			
 		}
 		
 		softassert.assertEquals(listOfPrices.size(),6);
@@ -74,6 +74,6 @@ public class FirstTestNG {
 
 	@AfterTest
 	public void afterTest() {
-		driver.quit();
+//		driver.quit();
 	}
 }
