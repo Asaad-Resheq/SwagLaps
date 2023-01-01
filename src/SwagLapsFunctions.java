@@ -37,4 +37,13 @@ public class SwagLapsFunctions {
 		}
 	}
 	
+	public String clickI(int i,List<WebElement> names) {
+		names.get(i).click();
+		String detialName = driver.findElement(By.className("inventory_details_name")).getText();
+		driver.navigate().back();
+		
+		return detialName;
+		 
+		
+	}
 }

@@ -6,7 +6,7 @@
       <class name="SwagLaps">
         <methods>
           <include name="afterTesting"/>
-          <include name="addAllItems"/>
+          <include name="totalPrice"/>
           <include name="beforeTesting"/>
         </methods>
       </class> <!-- SwagLaps -->
